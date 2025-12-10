@@ -1,0 +1,175 @@
+.maps-page {
+  min-height: 100vh;
+  background: #f5f7fa;
+}
+
+.maps-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.maps-content {
+  display: grid;
+  grid-template-columns: 350px 1fr;
+  gap: 30px;
+  margin-top: 20px;
+}
+
+.shop-info-card {
+  background: white;
+  border-radius: 15px;
+  padding: 30px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+  height: fit-content;
+}
+
+.shop-info-card h2 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.part-price {
+  font-size: 28px;
+  font-weight: 700;
+  color: #667eea;
+  margin-bottom: 25px;
+}
+
+.shop-details {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-bottom: 25px;
+}
+
+.shop-detail-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+}
+
+.detail-icon {
+  font-size: 20px;
+  color: #667eea;
+  margin-top: 3px;
+}
+
+.shop-detail-item > div {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.detail-label {
+  font-size: 12px;
+  color: #999;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.detail-value {
+  font-size: 15px;
+  color: #333;
+  font-weight: 500;
+}
+
+.btn-directions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  width: 100%;
+  padding: 14px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-directions:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(102, 126, 234, 0.3);
+}
+
+.map-wrapper {
+  position: relative;
+  background: white;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+  height: 600px;
+}
+
+.google-map {
+  width: 100%;
+  height: 100%;
+}
+
+.map-placeholder {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #f5f7fa;
+  color: #666;
+}
+
+.map-icon {
+  font-size: 60px;
+  color: #667eea;
+  margin-bottom: 15px;
+}
+
+.map-placeholder p {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.map-placeholder small {
+  font-size: 12px;
+  color: #999;
+  max-width: 300px;
+  text-align: center;
+}
+
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-size: 24px;
+  color: #667eea;
+}
+
+@media (max-width: 992px) {
+  .maps-content {
+    grid-template-columns: 1fr;
+  }
+  .map-wrapper {
+    height: 400px;
+  }
+}
+
+@media (max-width: 768px) {
+  .shop-info-card {
+    padding: 20px;
+  }
+  .shop-info-card h2 {
+    font-size: 20px;
+  }
+  .part-price {
+    font-size: 24px;
+  }
+}
